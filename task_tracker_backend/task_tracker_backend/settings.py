@@ -25,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-hg55*r=p(7mlqqc$r!+t2xh1v9ow-rgylige+xi98l534mju$8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = FALSE
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['task-tracker-rh3c.onrender.com','127.0.0.1']
 
 CORS_ALLOW_ALL_ORIGINS = True
 # CORS_ORIGIN_ALLOW_ALL = True
