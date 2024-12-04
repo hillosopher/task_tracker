@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input-field {
+  @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2;
+}
+
+.centered-div {
+  @apply absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] border-2 border-gray-200 rounded-lg shadow-md bg-blue-50;
+}
