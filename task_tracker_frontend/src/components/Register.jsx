@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "./Button";
 
 const Register = () => {
   const [username, setUsername] = useState("");
@@ -37,9 +38,9 @@ const Register = () => {
       <form className="flex flex-col gap-3 m-9" onSubmit={handleRegister}>
         <input className="input-field" type="email" placeholder="Email Address" value={username} onChange={(e) => setUsername(e.target.value)} />
         <input className="input-field" type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
-        <button className="form-button" type="submit">
+        <Button className="form-button" type="submit">
           Register
-        </button>
+        </Button>
       </form>
       {success && <p style={{ color: "green" }}>{success}</p>}
       {error && <p style={{ color: "red" }}>{error}</p>}
