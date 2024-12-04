@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiClient = axios.create({
-  baseURL: "http://127.0.0.1:8000/api/",
+  baseURL: "https://task-tracker-rh3c.onrender.com/api/",
 });
 
 apiClient.interceptors.request.use((config) => {
@@ -19,7 +19,7 @@ apiClient.interceptors.response.use(
       const refreshToken = localStorage.getItem("refresh_token");
       if (refreshToken) {
         try {
-          const { data } = await axios.post("http://127.0.0.1:8000/api/token/refresh/", {
+          const { data } = await axios.post("https://task-tracker-rh3c.onrender.com/api/token/refresh/", {
             refresh: refreshToken,
           });
 
