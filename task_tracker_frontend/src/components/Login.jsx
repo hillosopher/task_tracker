@@ -26,7 +26,7 @@ const Login = () => {
       localStorage.setItem("access_token", data.access);
       localStorage.setItem("refresh_token", data.refresh);
 
-      setTimeout(navigate("/tasks"), 5000); // Navigate to tasks page after login
+      navigate("/tasks"); // Navigate to tasks page after login
     } catch (error) {
       setError(error.message);
     }
